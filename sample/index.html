@@ -1,0 +1,24 @@
+<html>
+<head>
+<style>
+picture source,
+picture img {
+width: 100%;
+}
+h1 span.mobile { display: none }
+h1 span.desktop { display: block }
+@media(max-width: 760px) {
+  h1 span.mobile { display: block }
+  h1 span.desktop { display: none }
+}
+</style>
+</head>
+<body>
+<h1><span class="mobile">Mobile</span><span class="desktop">Desktop</span></h1>
+<picture>
+<source media="(max-width: 760px)" srcset="main-kari.jpg">
+<img src="./sl1.jpg">
+</picture>
+</body>
+</html>
+
